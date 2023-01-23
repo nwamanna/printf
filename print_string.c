@@ -5,6 +5,7 @@ int print_string(va_list ptr)
 	int value = 0;
 	int count = 0;
 	int i;
+
 	if (c)
 	{
 		for (i = 0; c[i] != '\0'; i++)

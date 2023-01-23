@@ -1,2 +1,2 @@
-This project prints input to standarrd output.
-It is my own version of the origninal printf function
+This project prints input to standard output.
+It is an version of the orignal printf function

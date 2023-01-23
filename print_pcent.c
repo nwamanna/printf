@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 *print_pcent - prints % to output
-*
+*@ptr: ...
 *Return: count of character printed
 */
 int print_pcent(va_list ptr)
