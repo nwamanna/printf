@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * print_string - prints a string passed as an argument
+ * @ptr: va_list of the argument passed
+ *
+ * Return: number of characters printed
+ */
 int print_string(va_list ptr)
 {
 	char *c = va_arg(ptr, char *);

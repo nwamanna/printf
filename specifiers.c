@@ -2,7 +2,6 @@
 /**
 *specifier - selects the function needed
 *@format: parameter
-*
 *Return: approiprate function
 */
 int (*specifier(const char *format))(va_list)
