@@ -7,7 +7,7 @@
 */
 int print_dec(va_list ptr)
 {
-	int number;
+	int number, num;
 	int i = 0;
 	int array[10];
 	int count = 0;
@@ -15,16 +15,28 @@ int print_dec(va_list ptr)
 	/* assigns variadic parameter to number*/
 	number = va_arg(ptr, int);
 
-	while (number != 0)
+	if (number < 0)
 	{
-		array[i] = number % 10;
-		number = number / 10;
-		if (number == 0)
+		num = -number;
+	}
+	else
+	{
+		num = number;
+	}
+	while (num != 0)
+	{
+		array[i] = num % 10;
+		num = num / 10;
+		if (num == 0)
 		{
 			break;
 		}
 		else
 			i++;
+	}
+	if (number < 0)
+	{
+		count += write(1, "-", 1);
 	}
 	while (i >= 0)
 	{
